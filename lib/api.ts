@@ -1,5 +1,5 @@
-export const API_BASE = (process.env.NEXT_PUBLIC_API_BASE_URL || (typeof window !== 'undefined' ? window.location.origin : 'https://api.irkop.workers.dev')).replace(/\/$/, '');
-export const API_PREFIX = (process.env.NEXT_PUBLIC_API_PREFIX || (typeof window !== 'undefined' ? '/api/irkop/v1/konter' : '/v1/konter')).replace(/\/$/, '');
+export const API_BASE = (process.env.NEXT_PUBLIC_API_BASE_URL || 'https://api.irkop.workers.dev').replace(/\/$/, '');
+export const API_PREFIX = (process.env.NEXT_PUBLIC_API_PREFIX || '/v1/konter').replace(/\/$/, '');
 
 export type ApiRequest = { method?: string; body?: unknown; query?: Record<string,string|number|boolean|undefined>; signal?: AbortSignal };
 
