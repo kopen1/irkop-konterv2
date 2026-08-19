@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "pages:build": "npx @cloudflare/next-on-pages"
+    "start": "next start"
   },
   "dependencies": {
     "@tailwindcss/postcss": "latest",
@@ -17,7 +16,6 @@
     "tailwindcss": "latest"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.1",
     "@types/node": "^22.10.2",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
