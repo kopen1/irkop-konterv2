@@ -1,0 +1,15 @@
+# Dependencies & build artifacts
+node_modules/
+dist/
+*.log
+
+# Secrets & credentials
+.env
+.env.*
+!.env.example
+.dev.vars
+*.pem
+*.key
+
+# OS
+.DS_Store

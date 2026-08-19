@@ -1,0 +1,28 @@
+{
+  "user":{"id":1,"name":"Budi Admin","email":"admin@irkop.local","role":"admin","outlet_id":1},
+  "outlet":{"id":1,"name":"Outlet Utama","address":"Jl. Contoh No. 10"},
+  "categories":[{"id":1,"name":"Voucher"},{"id":2,"name":"Transfer"},{"id":3,"name":"Tarik Tunai"},{"id":4,"name":"Aksesoris"},{"id":5,"name":"Service"}],
+  "products":[
+    {"id":1,"name":"Voucher Telkomsel 10K","category_id":1,"sell_price":11500,"cost_price":10000,"stock":42},
+    {"id":2,"name":"Voucher XL 10K","category_id":1,"sell_price":11200,"cost_price":9800,"stock":31},
+    {"id":3,"name":"Transfer Bank","category_id":2,"sell_price":5000,"cost_price":0,"stock":999},
+    {"id":4,"name":"Tarik Tunai","category_id":3,"sell_price":5000,"cost_price":0,"stock":999},
+    {"id":5,"name":"Kabel Data Type-C","category_id":4,"sell_price":25000,"cost_price":16000,"stock":18}
+  ],
+  "customers":[{"id":1,"name":"Andi Saputra","phone":"081234567890"},{"id":2,"name":"Siti Rahma","phone":"081298765432"},{"id":3,"name":"Rudi Cell","phone":"082155667788"}],
+  "transactions":[
+    {"id":1001,"product_id":1,"category_id":1,"sell_price":11500,"cost_price":10000,"profit":1500,"payment_method":"Tunai","customer_id":1,"user_id":1,"transaction_date":"2026-08-19T08:10:00"},
+    {"id":1002,"product_id":3,"category_id":2,"sell_price":5000,"cost_price":0,"profit":5000,"payment_method":"Tunai","customer_id":2,"user_id":1,"transaction_date":"2026-08-19T08:24:00"},
+    {"id":1003,"product_id":5,"category_id":4,"sell_price":25000,"cost_price":16000,"profit":9000,"payment_method":"Transfer","customer_id":null,"user_id":1,"transaction_date":"2026-08-19T09:05:00"},
+    {"id":1004,"product_id":4,"category_id":3,"sell_price":5000,"cost_price":0,"profit":5000,"payment_method":"Tunai","customer_id":3,"user_id":1,"transaction_date":"2026-08-19T09:45:00"}
+  ],
+  "cashier":{"status":"open","opening_balance":350000,"drawer_cash":370000,"closing_balance":null,"opened_at":"2026-08-19T07:58:00","banks":[{"name":"Dana","balance":825000},{"name":"OrderKuota","balance":410000},{"name":"SeaBank","balance":1250000}]},
+  "services":[{"id":501,"device_name":"iPhone 11","customer_id":1,"phone_number":"081234567890","damage_description":"LCD bergaris","service_cost":450000,"cost_price":280000,"profit":170000,"date_in":"2026-08-18","date_out":null,"warranty":"30 hari","technician_id":1,"notes":"Tunggu sparepart LCD","status":"menunggu_sparepart"},{"id":502,"device_name":"Samsung A52","customer_id":2,"phone_number":"081298765432","damage_description":"Ganti konektor charger","service_cost":180000,"cost_price":70000,"profit":110000,"date_in":"2026-08-17","date_out":"2026-08-19","warranty":"14 hari","technician_id":2,"notes":"Sudah dites charging","status":"diambil"}],
+  "kasbon":[{"id":1,"name":"Rudi Cell","total_debt":300000,"entries":[{"amount":500000,"description":"Ambil barang"}],"payments":[{"amount":200000,"note":"Bayar sebagian"}]},{"id":2,"name":"Andi Saputra","total_debt":150000,"entries":[{"amount":150000,"description":"Voucher + aksesoris"}],"payments":[]}],
+  "expenses":[{"id":1,"category":"Listrik","amount":350000,"date":"2026-08-18","note":"Token listrik"},{"id":2,"category":"Operasional","amount":85000,"date":"2026-08-19","note":"Parkir & makan teknisi"}],
+  "employees":[{"id":1,"name":"Agus","position":"Teknisi","phone":"081300001111"},{"id":2,"name":"Deni","position":"Teknisi","phone":"081300002222"},{"id":3,"name":"Budi Admin","position":"Admin","phone":"081300003333"}],
+  "accounts":[{"id":1,"account_name":"Dana","account_number":"0898123456","balance":825000},{"id":2,"account_name":"OrderKuota","account_number":"082211223344","balance":410000},{"id":3,"account_name":"SeaBank","account_number":"9012-3344-5566","balance":1250000}],
+  "notif_sources":[{"id":1,"source_name":"Dana","matcher_type":"package_name","value":"id.dana","status":"aktif"},{"id":2,"source_name":"OrderKuota","matcher_type":"package_name","value":"com.orderkuota","status":"aktif"}],
+  "custom_fields":[{"id":1,"field_name":"Nomor Referensi","field_type":"text","is_active":1}],
+  "audit_logs":[{"id":1,"user_id":1,"action":"create","table_name":"transactions","record_id":1004,"detail":"Transaksi Tarik Tunai","created_at":"2026-08-19 09:45"}]
+}
